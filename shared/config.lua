@@ -7,6 +7,11 @@ Config.Control = {
   Name = "~INPUT_CONTEXT~"
 }
 
+Config.Cutscenes = {
+  enabled = true,
+  long = false
+}
+
 Config.DrawDistance = 20.0
 
 Config.ActivationDistanceScaler = 1.2

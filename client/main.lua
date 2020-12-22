@@ -221,7 +221,11 @@ RegisterCommand(
               end
             end
 
+            if (Config.Cutscenes.enabled) then BeginLeaving(IsOnIsland) end
+
             EnableIsland(not IsOnIsland)
+                      
+            if (Config.Cutscenes.enabled) then BeginLanding(IsOnIsland) end
 
             StartPlayerTeleport(PlayerId(), endCoordinate.x, endCoordinate.y, endCoordinate.z, endHeading, true, true, false)
 
